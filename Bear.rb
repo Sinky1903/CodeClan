@@ -13,4 +13,10 @@ def stomach
 return @stomach.count
 end
 
+
+def eats(fish, river)
+   @stomach << fish
+   river.fish_eaten(fish)
+ end
+
 end
